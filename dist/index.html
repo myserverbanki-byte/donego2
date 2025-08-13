@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>DoneGo</title>
+
+    <meta name="theme-color" content="#3b82f6" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Basic GA (замени G-XXXXXXXXXX на свой ID или удали блок) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+      window.dgTrack = (name, params={}) => { try { gtag('event', name, params); } catch(e){} };
+    </script>
+    <script type="module" crossorigin src="/assets/index-946b34ea.js"></script>
+    <link rel="stylesheet" href="/assets/index-6865055e.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+  <body class="h-full bg-white dark:bg-slate-900">
+    <div id="root"></div>
+    
+  </body>
+</html>
